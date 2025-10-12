@@ -1,24 +1,50 @@
-
-
 body {
 
     font-family: "Tajawal";
+    color: #0C0708;
 }
 
 .header-page {
-font-family: "Tajawal";
-font-weight: 400;
-font-size: 16px;
-line-height: 150%;
-color: #0C0708
-    
+    font-family: "Tajawal";
+    font-weight: 400;
+    font-size: 16px;
+    line-height: 150%;
+    color: #0C0708
 }
 
 .header-register {
-font-family: "Tajawal";
-font-weight: 500;
-font-size: 16px;
-line-height: 150%;
-color: #0C0708
+    font-family: "Tajawal";
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+    color: #0C0708
+}
+
+.hero-title {
+    font-family: "Caveat";
+    font-weight: 700;
+    font-size: 56px;
+    line-height: 100%;
+    letter-spacing: -0.01em;
+}
+
+.hero-text {
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+
+}
+
+.hero-register {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
+
+}
+
+.hero-more {
+    font-weight: 500;
+    font-size: 16px;
+    line-height: 150%;
 
 }
