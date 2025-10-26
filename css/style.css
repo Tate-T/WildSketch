@@ -3,13 +3,14 @@ body {
     font-family: "Tajawal";
     color: #0C0708;
 }
+
 .container {
-outline: solid red;
-width: 1344px;
-padding-left: 16px;
-padding-right: 16px;
-margin-left:auto;
-margin-right: auto;
+    outline: solid red;
+    width: 1344px;
+    padding-left: 16px;
+    padding-right: 16px;
+    margin-left: auto;
+    margin-right: auto;
 }
 
 .header {
@@ -70,6 +71,32 @@ margin-right: auto;
 .about {
     padding-top: 112px;
     padding-bottom: 112px;
+}
+
+.about-title {
+
+    font-family: "Caveat";
+    font-weight: 700;
+    font-size: 40px;
+    line-height: 120%;
+    letter-spacing: -0.01em;
+    
+
+}
+
+.about-subtitle {
+    font-weight: 700;
+    font-size: 24px;
+    line-height: 110%;
+    letter-spacing: -0.01em;
+    color: var(--color-scheme-1-text);
+}
+
+.about-text{
+font-weight: 400;
+font-size: 16px;
+line-height: 150%;
+
 }
 
 .gallery {
