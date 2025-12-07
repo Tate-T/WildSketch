@@ -216,6 +216,66 @@ nav {
   padding-bottom: 64px;
 }
 
+.shedule-item
+{
+  display: flex;
+  align-items: center;
+}
+
+.shedule-title
+{
+  font-family: "Caveat";
+font-weight: 700;
+font-size: 48px;
+line-height: 110%;
+letter-spacing: -0.01em;
+color: var(--color-scheme-2-text);
+}
+
+.shedule-text
+{
+  font-family: "Tajawal";
+font-weight: 400;
+font-size: 18px;
+line-height: 150%;
+color: var(--color-scheme-2-text);
+}
+
+.shedule-subtitle
+{
+  font-family: "Tajawal";
+font-weight: 700;
+font-size: 24px;
+line-height: 110%;
+letter-spacing: -0.01em;
+color: var(--color-scheme-1-text);
+}
+
+.shedule-location
+{
+  font-family: "Tajawal";
+font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+text-align: center;
+color: var(--color-scheme-1-text);
+}
+
+.shedule-time
+{
+  font-family: "Tajawal";
+font-weight: 500;
+font-size: 16px;
+line-height: 150%;
+color: var(--color-neutral-darkest);
+}
+
+.shedule-address
+{
+  display: flex;
+}
+
+
 .team {
   padding-top: 64px;
   padding-bottom: 37px;
