@@ -157,6 +157,60 @@ nav {
   padding-bottom: 64px;
 }
 
+.gallery-title {
+    text-align: center;
+    padding-top: 64px;
+    margin-bottom: 24px;
+    font-family: "Caveat";
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 110%;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: var(--color-scheme-1-text);
+}
+
+.gallery-text {
+    text-align: center;
+    margin-bottom: 80px;
+    font-family: "Tajawal";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--color-scheme-1-text);
+}
+
+.gallery-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.gallery-item:nth-child(1) {
+    flex-basis: calc((100% / 3) - 64px);
+}
+
+.gallery-item:nth-child(2) {
+    flex-basis: calc((100% / 3) - 64px);
+}
+
+.gallery-item:nth-child(3) {
+    flex-basis: calc((100% / 3) - 64px);
+}
+
+.gallery-item:nth-child(4) {
+    flex-basis: calc((100% / 4) - 96px);
+}
+
+.gallery-item:nth-child(5) {
+    flex-basis: calc((100% / 4) - 96px);
+}
+
+.gallery-item:nth-child(6) {
+    flex-basis: calc((100% / 4) - 96px);
+}
+
 .shedule {
   padding-top: 64px;
   padding-bottom: 64px;
