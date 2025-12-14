@@ -84,12 +84,35 @@ nav {
   font-size: 16px;
   line-height: 150%;
   margin-right: 16px;
+  border: 1px solid #fbb780;
+  border-radius: 100px;
+  padding: 10px 24px;
+  width: 105px;
+  height: 44px;
+  background-color: #fbb780;
+}
+
+.hero-register:hover {
+  box-shadow: -9px -4px 91px 4px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -9px -4px 91px 4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -9px -4px 91px 4px rgba(0, 0, 0, 0.75);
+}
+
+.hero-more:hover {
+  box-shadow: -9px -4px 91px 4px rgba(0, 0, 0, 0.75);
+  -webkit-box-shadow: -9px -4px 91px 4px rgba(0, 0, 0, 0.75);
+  -moz-box-shadow: -9px -4px 91px 4px rgba(0, 0, 0, 0.75);
 }
 
 .hero-more {
   font-weight: 500;
   font-size: 16px;
   line-height: 150%;
+  border: 1px solid rgba(12, 7, 8, 15%);
+  border-radius: 100px;
+  padding: 10px 24px;
+  width: 127px;
+  height: 44px;
 }
 
 .about {
@@ -105,6 +128,7 @@ nav {
 .about-begemot {
   width: 616px;
 }
+
 .about-block {
   /* outline: solid red; */
 }
@@ -117,24 +141,25 @@ nav {
   letter-spacing: -0.01em;
   margin-bottom: 32px;
   max-width: 450px;
-  
+
 }
+
 .about-item {
-    /* outline: solid rgb(255, 0, 217); */
-    display:flex;
-    gap: 24px;
-    align-items: start;
-    margin-bottom: 32px;
-    
+  /* outline: solid rgb(255, 0, 217); */
+  display: flex;
+  gap: 24px;
+  align-items: start;
+  margin-bottom: 32px;
+
 
 }
 
 .about-box {
-    /* background-color: pink; */
+  /* background-color: pink; */
 }
 
 .about-foto {
-    flex-shrink: 0;
+  flex-shrink: 0;
 }
 
 .about-subtitle {
@@ -158,57 +183,57 @@ nav {
 }
 
 .gallery-title {
-    text-align: center;
-    padding-top: 64px;
-    margin-bottom: 24px;
-    font-family: "Caveat";
-    font-weight: 700;
-    font-size: 48px;
-    line-height: 110%;
-    letter-spacing: -0.01em;
-    text-align: center;
-    color: var(--color-scheme-1-text);
+  text-align: center;
+  padding-top: 64px;
+  margin-bottom: 24px;
+  font-family: "Caveat";
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 110%;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: var(--color-scheme-1-text);
 }
 
 .gallery-text {
-    text-align: center;
-    margin-bottom: 80px;
-    font-family: "Tajawal";
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 150%;
-    text-align: center;
-    color: var(--color-scheme-1-text);
+  text-align: center;
+  margin-bottom: 80px;
+  font-family: "Tajawal";
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--color-scheme-1-text);
 }
 
 .gallery-list {
-    display: flex;
-    flex-wrap: wrap;
-    gap: 32px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 32px;
 }
 
 .gallery-item:nth-child(1) {
-    flex-basis: calc((100% / 3) - 64px);
+  flex-basis: calc((100% / 3) - 64px);
 }
 
 .gallery-item:nth-child(2) {
-    flex-basis: calc((100% / 3) - 64px);
+  flex-basis: calc((100% / 3) - 64px);
 }
 
 .gallery-item:nth-child(3) {
-    flex-basis: calc((100% / 3) - 64px);
+  flex-basis: calc((100% / 3) - 64px);
 }
 
 .gallery-item:nth-child(4) {
-    flex-basis: calc((100% / 4) - 96px);
+  flex-basis: calc((100% / 4) - 96px);
 }
 
 .gallery-item:nth-child(5) {
-    flex-basis: calc((100% / 4) - 96px);
+  flex-basis: calc((100% / 4) - 96px);
 }
 
 .gallery-item:nth-child(6) {
-    flex-basis: calc((100% / 4) - 96px);
+  flex-basis: calc((100% / 4) - 96px);
 }
 
 .shedule {
@@ -216,62 +241,55 @@ nav {
   padding-bottom: 64px;
 }
 
-.shedule-item
-{
+.shedule-item {
   display: flex;
   align-items: center;
 }
 
-.shedule-title
-{
+.shedule-title {
   font-family: "Caveat";
-font-weight: 700;
-font-size: 48px;
-line-height: 110%;
-letter-spacing: -0.01em;
-color: var(--color-scheme-2-text);
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 110%;
+  letter-spacing: -0.01em;
+  color: var(--color-scheme-2-text);
 }
 
-.shedule-text
-{
+.shedule-text {
   font-family: "Tajawal";
-font-weight: 400;
-font-size: 18px;
-line-height: 150%;
-color: var(--color-scheme-2-text);
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  color: var(--color-scheme-2-text);
 }
 
-.shedule-subtitle
-{
+.shedule-subtitle {
   font-family: "Tajawal";
-font-weight: 700;
-font-size: 24px;
-line-height: 110%;
-letter-spacing: -0.01em;
-color: var(--color-scheme-1-text);
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 110%;
+  letter-spacing: -0.01em;
+  color: var(--color-scheme-1-text);
 }
 
-.shedule-location
-{
+.shedule-location {
   font-family: "Tajawal";
-font-weight: 400;
-font-size: 14px;
-line-height: 150%;
-text-align: center;
-color: var(--color-scheme-1-text);
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 150%;
+  text-align: center;
+  color: var(--color-scheme-1-text);
 }
 
-.shedule-time
-{
+.shedule-time {
   font-family: "Tajawal";
-font-weight: 500;
-font-size: 16px;
-line-height: 150%;
-color: var(--color-neutral-darkest);
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: var(--color-neutral-darkest);
 }
 
-.shedule-address
-{
+.shedule-address {
   display: flex;
 }
 
