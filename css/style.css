@@ -1,161 +1,297 @@
 body {
-
-    font-family: "Tajawal";
-    color: #0C0708;
+  font-family: "Tajawal";
+  color: #0c0708;
 }
 
-
 .container {
-    width: 1344px;
-    padding-left: 16px;
-    padding-right: 16px;
-    margin-left: auto;
-    margin-right: auto;
-    outline: solid red;
+  width: 1344px;
+  padding-left: 16px;
+  padding-right: 16px;
+  margin-left: auto;
+  margin-right: auto;
 }
 
 .header {
-    padding-top: 7px;
-    padding-bottom: 7px;
+  padding-top: 7px;
+  padding-bottom: 7px;
 }
 
 .header-container {
-    display: flex;
-    align-items: center;
+  display: flex;
+  align-items: center;
 }
 
 .header-page {
-    font-family: "Tajawal";
-    font-weight: 400;
-    font-size: 16px;
-    line-height: 150%;
-    color: #0C0708;
+  font-family: "Tajawal";
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
+  color: #0c0708;
 }
 
 .header-register {
-    font-family: "Tajawal";
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 150%;
-    color: #0C0708
+  font-family: "Tajawal";
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  color: #0c0708;
 }
 
 .header-list {
-    display: flex;
-    gap: 32px;
+  display: flex;
+  gap: 32px;
 }
 
 nav {
-    margin-left: auto;
-    margin-right: 32px;
+  margin-left: auto;
+  margin-right: 32px;
 }
 
 .hero {
-    padding-top: 64px;
-    padding-bottom: 64px;
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 
 .hero-container {
-    display: flex;
-    /* outline: solid green; */
-    align-items: center;
-    gap: 32px;
+  display: flex;
+  /* outline: solid green; */
+  align-items: center;
+  gap: 32px;
 }
 
 .hero-box {
-    /* outline: solid red; */
+  /* outline: solid red; */
 }
 
-
 .hero-title {
-    font-family: "Caveat";
-    font-weight: 700;
-    font-size: 56px;
-    line-height: 100%;
-    letter-spacing: -0.01em;
-    margin-bottom: 24px;
+  font-family: "Caveat";
+  font-weight: 700;
+  font-size: 56px;
+  line-height: 100%;
+  letter-spacing: -0.01em;
+  margin-bottom: 24px;
 }
 
 .hero-text {
-    font-weight: 400;
-    font-size: 18px;
-    line-height: 150%;
-    margin-bottom: 32px;
-
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  margin-bottom: 32px;
 }
 
 .hero-register {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 150%;
-    margin-right: 16px;
-
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
+  margin-right: 16px;
 }
 
 .hero-more {
-    font-weight: 500;
-    font-size: 16px;
-    line-height: 150%;
-
+  font-weight: 500;
+  font-size: 16px;
+  line-height: 150%;
 }
 
 .about {
-    padding-top: 112px;
-    padding-bottom: 112px;
+  padding-top: 112px;
+  padding-bottom: 112px;
+}
+
+.about-container {
+  display: flex;
+  gap: 80px;
+}
+
+.about-begemot {
+  width: 616px;
+}
+.about-block {
+  /* outline: solid red; */
 }
 
 .about-title {
-
-    font-family: "Caveat";
-    font-weight: 700;
-    font-size: 40px;
-    line-height: 120%;
-    letter-spacing: -0.01em;
+  font-family: "Caveat";
+  font-weight: 700;
+  font-size: 40px;
+  line-height: 120%;
+  letter-spacing: -0.01em;
+  margin-bottom: 32px;
+  max-width: 450px;
+  
+}
+.about-item {
+    /* outline: solid rgb(255, 0, 217); */
+    display:flex;
+    gap: 24px;
+    align-items: start;
+    margin-bottom: 32px;
     
 
 }
 
-.about-subtitle {
-    font-weight: 700;
-    font-size: 24px;
-    line-height: 110%;
-    letter-spacing: -0.01em;
-    color: var(--color-scheme-1-text);
+.about-box {
+    /* background-color: pink; */
 }
 
-.about-text{
-font-weight: 400;
-font-size: 16px;
-line-height: 150%;
+.about-foto {
+    flex-shrink: 0;
+}
 
+.about-subtitle {
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 110%;
+  letter-spacing: -0.01em;
+  color: var(--color-scheme-1-text);
+  margin-bottom: 16px;
+}
+
+.about-text {
+  font-weight: 400;
+  font-size: 16px;
+  line-height: 150%;
 }
 
 .gallery {
+  padding-top: 64px;
+  padding-bottom: 64px;
+}
+
+.gallery-title {
+    text-align: center;
     padding-top: 64px;
-    padding-bottom: 64px;
+    margin-bottom: 24px;
+    font-family: "Caveat";
+    font-weight: 700;
+    font-size: 48px;
+    line-height: 110%;
+    letter-spacing: -0.01em;
+    text-align: center;
+    color: var(--color-scheme-1-text);
+}
+
+.gallery-text {
+    text-align: center;
+    margin-bottom: 80px;
+    font-family: "Tajawal";
+    font-weight: 400;
+    font-size: 18px;
+    line-height: 150%;
+    text-align: center;
+    color: var(--color-scheme-1-text);
+}
+
+.gallery-list {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 32px;
+}
+
+.gallery-item:nth-child(1) {
+    flex-basis: calc((100% / 3) - 64px);
+}
+
+.gallery-item:nth-child(2) {
+    flex-basis: calc((100% / 3) - 64px);
+}
+
+.gallery-item:nth-child(3) {
+    flex-basis: calc((100% / 3) - 64px);
+}
+
+.gallery-item:nth-child(4) {
+    flex-basis: calc((100% / 4) - 96px);
+}
+
+.gallery-item:nth-child(5) {
+    flex-basis: calc((100% / 4) - 96px);
+}
+
+.gallery-item:nth-child(6) {
+    flex-basis: calc((100% / 4) - 96px);
 }
 
 .shedule {
-    padding-top: 64px;
-    padding-bottom: 64px;
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 
+.shedule-item
+{
+  display: flex;
+  align-items: center;
+}
+
+.shedule-title
+{
+  font-family: "Caveat";
+font-weight: 700;
+font-size: 48px;
+line-height: 110%;
+letter-spacing: -0.01em;
+color: var(--color-scheme-2-text);
+}
+
+.shedule-text
+{
+  font-family: "Tajawal";
+font-weight: 400;
+font-size: 18px;
+line-height: 150%;
+color: var(--color-scheme-2-text);
+}
+
+.shedule-subtitle
+{
+  font-family: "Tajawal";
+font-weight: 700;
+font-size: 24px;
+line-height: 110%;
+letter-spacing: -0.01em;
+color: var(--color-scheme-1-text);
+}
+
+.shedule-location
+{
+  font-family: "Tajawal";
+font-weight: 400;
+font-size: 14px;
+line-height: 150%;
+text-align: center;
+color: var(--color-scheme-1-text);
+}
+
+.shedule-time
+{
+  font-family: "Tajawal";
+font-weight: 500;
+font-size: 16px;
+line-height: 150%;
+color: var(--color-neutral-darkest);
+}
+
+.shedule-address
+{
+  display: flex;
+}
+
+
 .team {
-    padding-top: 64px;
-    padding-bottom: 37px;
+  padding-top: 64px;
+  padding-bottom: 37px;
 }
 
 .testimonials {
-    padding-top: 64px;
-    padding-bottom: 64px;
+  padding-top: 64px;
+  padding-bottom: 64px;
 }
 
 .register {
-    padding-top: 112px;
-    padding-bottom: 112px;
+  padding-top: 112px;
+  padding-bottom: 112px;
 }
 
 .register-footer {
-    padding-top: 80px;
-    padding-bottom: 80px;
+  padding-top: 80px;
+  padding-bottom: 80px;
 }
