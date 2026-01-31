@@ -27,7 +27,27 @@ body {
   font-size: 16px;
   line-height: 150%;
   color: #0c0708;
+  display: flex;
+  align-items: center;
+  gap: 10px;
 }
+
+.header-page:hover {
+  color: #f7941e;
+  .header-icon {
+    fill: #f7941e;
+  }
+}
+
+.header-icon {
+  width: 16px;
+  height: 16px;
+  fill: #0c0708;
+}
+
+
+
+
 
 .header-register {
   font-family: "Tajawal";
@@ -35,6 +55,16 @@ body {
   font-size: 16px;
   line-height: 150%;
   color: #0c0708;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-register:hover {
+  color: #f7941e;
+  .header-icon {
+    fill: #f7941e;
+  }
 }
 
 .header-list {
