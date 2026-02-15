@@ -27,6 +27,23 @@ body {
   font-size: 16px;
   line-height: 150%;
   color: #0c0708;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-page:hover {
+  color: #f7941e;
+
+  .header-icon {
+    fill: #f7941e;
+  }
+}
+
+.header-icon {
+  width: 16px;
+  height: 16px;
+  fill: #0c0708;
 }
 
 .header-register {
@@ -35,6 +52,17 @@ body {
   font-size: 16px;
   line-height: 150%;
   color: #0c0708;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.header-register:hover {
+  color: #f7941e;
+
+  .header-icon {
+    fill: #f7941e;
+  }
 }
 
 .header-list {
@@ -141,7 +169,6 @@ nav {
   letter-spacing: -0.01em;
   margin-bottom: 32px;
   max-width: 450px;
-
 }
 
 .about-item {
@@ -150,8 +177,6 @@ nav {
   gap: 24px;
   align-items: start;
   margin-bottom: 32px;
-
-
 }
 
 .about-box {
@@ -293,10 +318,42 @@ nav {
   display: flex;
 }
 
-
 .team {
   padding-top: 64px;
   padding-bottom: 37px;
+}
+
+.team-title {
+  font-weight: 700;
+  font-size: 48px;
+  line-height: 110%;
+  letter-spacing: -0.01em;
+  text-align: center;
+  color: #0c0708;
+  margin-bottom: 24px;
+}
+
+.team-text {
+  font-weight: 400;
+  font-size: 18px;
+  line-height: 150%;
+  text-align: center;
+  color: #0c0708;
+  margin-bottom: 40px;
+}
+
+.team-list {
+  display: flex;
+  justify-content: space-between;
+}
+
+.team-item {
+  width: 192px;
+  text-align: center;
+}
+
+.team-name {
+  margin-top: 24px;
 }
 
 .testimonials {
@@ -313,3 +370,203 @@ nav {
   padding-top: 80px;
   padding-bottom: 80px;
 }
+
+.team-elmnts {
+  display: flex;
+  gap: 10px;
+  justify-content: center;
+  margin-top: 20px;
+}
+
+.team-icon {
+  width: 15px;
+  height: 15px;
+  fill: gray;
+}
+
+.team-link {
+  width: 30px;
+  height: 30px;
+  border-radius: 50px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.team-link:hover {
+  background-color: green;
+  .team-icon {
+    fill: #fff;
+  }
+}
+
+/* модальне вікно */
+
+.backdrop {
+  background-color: #0c070879;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+}
+
+.model {
+  width: 528px;
+  background-color: #fff;
+  border-radius: 4px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  padding: 40px;
+}
+
+.model-butn {
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  border: none;
+  outline: 1px solid grey;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  position: absolute;
+  top: 10px;
+  right: 10px;
+}
+
+.model-icon {
+  width: 20px;
+  height: 20px;
+  fill: grey;
+}
+
+.model-butn:hover {
+  .model-icon {
+    fill: #f7941e;
+  }
+}
+
+.model-title {
+  font-weight: 700;
+  font-size: 20px;
+  letter-spacing: 0.03em;
+  text-align: center;
+  color: #212121;
+  margin-bottom: 12px;
+}
+
+.model-label {
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.01em;
+  color: #757575;
+  display: block;
+  position: relative;
+}
+
+.model-input {
+  display: block;
+  outline: 1px solid rgba(33, 33, 33, 0.2);
+  border: none;
+  border-radius: 4px;
+  width: 100%;
+  height: 40px;
+  margin-top: 4px;
+  margin-bottom: 10px;
+  padding-left: 42px;
+
+}
+
+.model-input:hover,
+.model-input:focus
+{
+   outline: 1px solid orange;
+}
+
+.model-input:hover + .model-pic,
+.model-input:focus + .model-pic{
+  fill: orange;
+}
+
+
+.model-coment {
+  display: block;
+  width: 100%;
+  outline: 1px solid rgba(33, 33, 33, 0.2);
+  border: none;
+  border-radius: 4px;
+  height: 120px;
+  resize: none;
+  padding: 12px 16px;
+  font-weight: 400;
+  font-size: 12px;
+  letter-spacing: 0.01em;
+  color: rgba(117, 117, 117, 0.5);
+  margin-top: 4px;
+  margin-bottom: 20px;
+}
+
+
+
+.model-box {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.model-check {
+  width: 16px;
+  height: 15px;
+}
+
+.model-text {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  letter-spacing: 0.03em;
+  color: #757575;
+  margin-left: 9px;
+  margin-right: 4px;
+}
+
+.model-link {
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 171%;
+  letter-spacing: 0.03em;
+  color: #757575;
+  text-decoration: underline;
+  text-decoration-skip-ink: none;
+  color: #2196f3;
+}
+
+.model-submit {
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 188%;
+  letter-spacing: 0.06em;
+  text-align: center;
+  color: #fff;
+  border-radius: 4px;
+  width: 200px;
+  height: 50px;
+  box-shadow: 0 4px 4px 0 rgba(0, 0, 0, 0.15);
+  background-color: #f7941e;
+  display: block;
+  margin: 0 auto;
+  margin-top: 30px;
+}
+
+.model-pic
+{
+  width: 18px;
+  height: 18px;
+  position: absolute;
+  top: 28px;
+  left: 12px;
+  fill: grey;
+}
+
+
