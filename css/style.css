@@ -1,3 +1,8 @@
+html {
+ scroll-behavior: smooth;
+ padding-top: 80px;
+}
+
 body {
   font-family: "Tajawal";
   color: #0c0708;
@@ -630,4 +635,24 @@ nav {
   top: 28px;
   left: 12px;
   fill: grey;
+}
+
+.scroll{
+  position: fixed;
+  right: 50px;
+  bottom: 50px;
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  background-color: #fbb780;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+
+.scroll-icon{
+  width: 25px;
+  height: 25px;
+  fill: #fff;
 }
