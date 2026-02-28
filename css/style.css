@@ -1,6 +1,6 @@
 html {
- scroll-behavior: smooth;
- padding-top: 80px;
+  scroll-behavior: smooth;
+  padding-top: 80px;
 }
 
 body {
@@ -40,6 +40,9 @@ body {
   /* display: flex; */
   align-items: center;
   gap: 10px;
+  transition-property: color;
+  transition-duration: 1000ms;
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .header-page:hover {
@@ -60,7 +63,11 @@ body {
   top: 35px;
   left: 0;
   opacity: 0;
+   transition-property:opacity;
+  transition-duration: 350ms;
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
+
 
 .header-page:hover::after {
   opacity: 1;
@@ -70,6 +77,10 @@ body {
   width: 16px;
   height: 16px;
   fill: #0c0708;
+   transition-property: fill;
+  transition-duration: 1000ms;
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+
 }
 
 .header-register {
@@ -81,7 +92,11 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
+   transition-property: color;
+  transition-duration: 1000ms;
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
+
 
 /* .header-register:hover {
   color: #f7941e;
@@ -152,7 +167,11 @@ nav {
   width: 105px;
   height: 44px;
   background-color: #fbb780;
+   transition-property: box-shadow;
+  transition-duration: 1000ms;
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
+
 
 .hero-register:hover {
   box-shadow: -9px -4px 91px 4px rgba(0, 0, 0, 0.75);
@@ -175,6 +194,9 @@ nav {
   padding: 10px 24px;
   width: 127px;
   height: 44px;
+   transition-property: box-shadow;
+  transition-duration: 1000ms;
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 .about {
@@ -274,12 +296,19 @@ nav {
 .gallery-item {
   position: relative;
   /* overflow: hidden; */
+   transition-property: box-shadow;
+  transition-duration: 1000ms;
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 
 }
-.gallery-item:hover{
- .gallery-desk{
-  opacity: 1;
- }
+
+.gallery-item:hover {
+  box-shadow: 5px 5px 10px 10px chartreuse;
+  border-radius: 15px;
+  .gallery-desk {
+    opacity: 1;
+
+  }
 }
 
 
@@ -319,8 +348,10 @@ nav {
   width: 100%;
   height: 100%;
   opacity: 0;
-  border-radius: 30px;  
-
+  border-radius: 30px;
+ transition-property: opacity;
+  transition-duration: 1000ms;
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
 
@@ -638,7 +669,7 @@ nav {
   fill: grey;
 }
 
-.scroll{
+.scroll {
   position: fixed;
   right: 50px;
   bottom: 50px;
@@ -652,7 +683,7 @@ nav {
 }
 
 
-.scroll-icon{
+.scroll-icon {
   width: 25px;
   height: 25px;
   fill: #fff;
