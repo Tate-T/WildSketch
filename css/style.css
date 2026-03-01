@@ -21,6 +21,17 @@ body {
   padding-bottom: 7px;
 }
 
+/* .header-logo {
+  transition-property: ;
+}
+
+.header-logo:hover {
+  transform: rotate(360deg);
+  transition-property: transform;
+  transition-duration: 1000ms;
+  transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+} */
+
 .header-container {
   display: flex;
   align-items: center;
@@ -28,7 +39,6 @@ body {
 
 .header-item {
   position: relative;
-
 }
 
 .header-page {
@@ -63,13 +73,14 @@ body {
   top: 35px;
   left: 0;
   opacity: 0;
-   transition-property:opacity;
+  transition-property: opacity, transform;
   transition-duration: 350ms;
   transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
+  transform: scale(0);
 }
 
-
 .header-page:hover::after {
+  transform: scale(1);
   opacity: 1;
 }
 
@@ -77,10 +88,9 @@ body {
   width: 16px;
   height: 16px;
   fill: #0c0708;
-   transition-property: fill;
+  transition-property: fill;
   transition-duration: 1000ms;
   transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
-
 }
 
 .header-register {
@@ -92,11 +102,10 @@ body {
   display: flex;
   align-items: center;
   gap: 10px;
-   transition-property: color;
+  transition-property: color;
   transition-duration: 1000ms;
   transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
-
 
 /* .header-register:hover {
   color: #f7941e;
@@ -147,6 +156,16 @@ nav {
   line-height: 100%;
   letter-spacing: -0.01em;
   margin-bottom: 24px;
+  transition-property: background-image, color, font-weight, transform;
+  transition-duration: 500ms;
+}
+
+.hero-title:hover {
+  transform: scale(1.1);
+  font-weight: 900;
+  background-clip: text;
+  color: transparent;
+  background-image: url("https://i0.wp.com/www.dogwonder.co.uk/wp-content/uploads/2009/12/tumblr_ku2pvuJkJG1qz9qooo1_r1_400.gif?resize=320%2C320");
 }
 
 .hero-text {
@@ -167,19 +186,20 @@ nav {
   width: 105px;
   height: 44px;
   background-color: #fbb780;
-   transition-property: box-shadow;
+  transition-property: box-shadow, transform;
   transition-duration: 1000ms;
   transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
-
 .hero-register:hover {
+  transform: scale(1.2);
   box-shadow: -9px -4px 91px 4px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: -9px -4px 91px 4px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -9px -4px 91px 4px rgba(0, 0, 0, 0.75);
 }
 
 .hero-more:hover {
+  transform: rotate(20deg) skew(10deg, 4deg);
   box-shadow: -9px -4px 91px 4px rgba(0, 0, 0, 0.75);
   -webkit-box-shadow: -9px -4px 91px 4px rgba(0, 0, 0, 0.75);
   -moz-box-shadow: -9px -4px 91px 4px rgba(0, 0, 0, 0.75);
@@ -194,7 +214,7 @@ nav {
   padding: 10px 24px;
   width: 127px;
   height: 44px;
-   transition-property: box-shadow;
+  transition-property: box-shadow, transform;
   transition-duration: 1000ms;
   transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
@@ -296,10 +316,9 @@ nav {
 .gallery-item {
   position: relative;
   /* overflow: hidden; */
-   transition-property: box-shadow;
+  transition-property: box-shadow;
   transition-duration: 1000ms;
   transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
-
 }
 
 .gallery-item:hover {
@@ -307,10 +326,8 @@ nav {
   border-radius: 15px;
   .gallery-desk {
     opacity: 1;
-
   }
 }
-
 
 .gallery-item:nth-child(1) {
   flex-basis: calc((100% / 3) - 64px);
@@ -349,11 +366,10 @@ nav {
   height: 100%;
   opacity: 0;
   border-radius: 30px;
- transition-property: opacity;
+  transition-property: opacity;
   transition-duration: 1000ms;
   transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
-
 
 .shedule {
   padding-top: 64px;
@@ -578,7 +594,6 @@ nav {
   margin-top: 4px;
   margin-bottom: 10px;
   padding-left: 42px;
-
 }
 
 .model-input:hover,
@@ -586,11 +601,10 @@ nav {
   outline: 1px solid orange;
 }
 
-.model-input:hover+.model-pic,
-.model-input:focus+.model-pic {
+.model-input:hover + .model-pic,
+.model-input:focus + .model-pic {
   fill: orange;
 }
-
 
 .model-coment {
   display: block;
@@ -608,8 +622,6 @@ nav {
   margin-top: 4px;
   margin-bottom: 20px;
 }
-
-
 
 .model-box {
   display: flex;
@@ -681,7 +693,6 @@ nav {
   justify-content: center;
   align-items: center;
 }
-
 
 .scroll-icon {
   width: 25px;
