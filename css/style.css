@@ -55,6 +55,39 @@ body {
   transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
 }
 
+.header-logo {
+  animation-name: logo;
+  animation-duration: 300ms;
+  animation-iteration-count: infinite;
+}
+
+@keyframes logo {
+  0% {
+  width: 20px;
+  height: 15px;
+  }
+
+  30% {
+    width: 40px;
+    height: 25px;
+  }
+
+  60% {
+    width: 80px;
+    height: 35px; ;
+  }
+
+  90% {
+    width: 100px;
+    height: 45px;
+  }
+
+  100% {
+      width: 117px;
+      height: 50px;
+  }
+}
+
 .header-page:hover {
   color: #f7941e;
 }
@@ -204,7 +237,7 @@ nav {
   50% {
     background-color: #f7941e;
   }
-  
+
   100% {
     background-color: brown;
   }
@@ -343,6 +376,7 @@ nav {
 .gallery-item:hover {
   box-shadow: 5px 5px 10px 10px chartreuse;
   border-radius: 15px;
+
   .gallery-desk {
     opacity: 1;
   }
@@ -550,7 +584,7 @@ nav {
   transition-duration: 1000ms;
 }
 
-.is-hidden > .model {
+.is-hidden>.model {
   transform: translate(-50%, -50%) scale(0);
 }
 
@@ -629,8 +663,8 @@ nav {
   outline: 1px solid orange;
 }
 
-.model-input:hover + .model-pic,
-.model-input:focus + .model-pic {
+.model-input:hover+.model-pic,
+.model-input:focus+.model-pic {
   fill: orange;
 }
 
