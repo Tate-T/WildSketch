@@ -1,4 +1,4 @@
-
+@use "../utiles/mixin" as *;
 
 .header {
   padding-top: 7px;
@@ -31,9 +31,6 @@
   font-size: 16px;
   line-height: 150%;
   color: #0c0708;
-  /* display: flex; */
-  align-items: center;
-  gap: 10px;
   transition-property: color;
   transition-duration: 1000ms;
   transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -111,9 +108,10 @@
   font-size: 16px;
   line-height: 150%;
   color: #0c0708;
-  display: flex;
-  align-items: center;
-  gap: 10px;
+  // display: flex;
+  // align-items: center;
+  // gap: 10px;
+  @include flexbox($gap:10px);
   transition-property: color;
   transition-duration: 1000ms;
   transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);

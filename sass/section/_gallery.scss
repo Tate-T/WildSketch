@@ -1,4 +1,4 @@
-
+@use "../utiles/mixin" as *;
 
 .gallery {
   padding-top: 64px;
@@ -30,9 +30,10 @@
 }
 
 .gallery-list {
-  display: flex;
-  flex-wrap: wrap;
-  gap: 32px;
+  // display: flex;
+  // flex-wrap: wrap;
+  // gap: 32px;
+  @include flexbox($gap:32px);
 }
 
 .gallery-item {

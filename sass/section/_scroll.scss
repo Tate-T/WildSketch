@@ -1,4 +1,4 @@
-
+@use "../utiles/mixin" as *;
 .scroll {
   position: fixed;
   right: 50px;
@@ -7,9 +7,10 @@
   height: 50px;
   border-radius: 50%;
   background-color: #fbb780;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  @include flexbox();
 }
 
 .scroll-icon {

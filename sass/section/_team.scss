@@ -1,4 +1,4 @@
-
+@use "../utiles/mixin" as *;
 
 .team {
   padding-top: 64px;
@@ -39,9 +39,10 @@
 }
 
 .team-elmnts {
-  display: flex;
-  gap: 10px;
-  justify-content: center;
+  // display: flex;
+  // gap: 10px;
+  // justify-content: center;
+  @include flexbox($gap:10px);
   margin-top: 20px;
 }
 
@@ -55,9 +56,10 @@
   width: 30px;
   height: 30px;
   border-radius: 50px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  // display: flex;
+  // justify-content: center;
+  // align-items: center;
+  @include flexbox();
 }
 
 .team-link:hover {

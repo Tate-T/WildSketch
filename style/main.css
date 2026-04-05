@@ -66,9 +66,6 @@ body {
   font-size: 16px;
   line-height: 150%;
   color: #0c0708;
-  /* display: flex; */
-  align-items: center;
-  gap: 10px;
   transition-property: color;
   transition-duration: 1000ms;
   transition-timing-function: cubic-bezier(0.25, 0.46, 0.45, 0.94);
@@ -142,7 +139,10 @@ body {
   line-height: 150%;
   color: #0c0708;
   display: flex;
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
   gap: 10px;
   transition-property: color;
   transition-duration: 1000ms;
@@ -181,8 +181,10 @@ nav {
 
 .hero-container {
   display: flex;
-  /* outline: solid green; */
+  flex-direction: row;
+  justify-content: center;
   align-items: center;
+  flex-wrap: no-wrap;
   gap: 32px;
 }
 
@@ -308,8 +310,11 @@ nav {
 .about-item {
   /* outline: solid rgb(255, 0, 217); */
   display: flex;
-  gap: 24px;
+  flex-direction: row;
+  justify-content: start;
   align-items: start;
+  flex-wrap: no-wrap;
+  gap: 24px;
   margin-bottom: 32px;
 }
 
@@ -367,6 +372,9 @@ nav {
 
 .gallery-list {
   display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
   flex-wrap: wrap;
   gap: 32px;
 }
@@ -526,8 +534,11 @@ nav {
 
 .team-elmnts {
   display: flex;
-  gap: 10px;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 10px;
   margin-top: 20px;
 }
 
@@ -542,8 +553,11 @@ nav {
   height: 30px;
   border-radius: 50px;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 0;
 }
 
 .team-link:hover {
@@ -577,8 +591,11 @@ nav {
   border-radius: 50%;
   background-color: #fbb780;
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 0;
 }
 
 .scroll-icon {
@@ -630,8 +647,11 @@ nav {
   border: none;
   outline: 1px solid grey;
   display: flex;
-  align-items: center;
+  flex-direction: row;
   justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 0;
   position: absolute;
   top: 10px;
   right: 10px;
@@ -706,8 +726,11 @@ nav {
 
 .model-box {
   display: flex;
+  flex-direction: row;
   justify-content: center;
   align-items: center;
+  flex-wrap: wrap;
+  gap: 0;
 }
 
 .model-check {

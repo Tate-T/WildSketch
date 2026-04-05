@@ -1,4 +1,4 @@
-
+@use"../utiles/mixin" as *;
 
 .about {
   padding-top: 112px;
@@ -30,9 +30,10 @@
 
 .about-item {
   /* outline: solid rgb(255, 0, 217); */
-  display: flex;
-  gap: 24px;
-  align-items: start;
+  // display: flex;
+  // gap: 24px;
+  // align-items: start;
+  @include flexbox($gap:24px, $align:start, $justify:start, $wrap:no-wrap);
   margin-bottom: 32px;
 }
 
